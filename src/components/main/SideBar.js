@@ -18,7 +18,7 @@ function SideBar() {
         <div className="w-28 h-full sticky bg-gray-800 flex flex-col align-center justify-between p-5">
             <img onClick={clickLogo} className="hover:shadow-lg cursor-pointer" src="/assets/png/LinkBulbInverted.png" alt="LinkBulb" />
             <SideBarItem route="/" selected={currentPage === "/"} icon={faHome} />
-            <SideBarItem route="/links" selected={currentPage === "/links"} icon={faLink} />
+            <SideBarItem route="/bulbs" selected={currentPage === "/bulbs"} icon={faLink} />
             <SideBarItem route="/analytics" selected={currentPage === "/analytics"} icon={faChartBar} />
             <SideBarItem route="/settings" selected={currentPage === "/settings"} icon={faCog} />
             <SideBarItem route="/logout" selected={currentPage === "/logout"} icon={faSignOutAlt} />

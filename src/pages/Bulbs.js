@@ -3,22 +3,22 @@ import Navbar from '../components/main/Navbar'
 import SideBar from '../components/main/SideBar'
 import useStore from '../store'
 
-function Links() {
+function Bulbs() {
 
     const changeCurrentPage = useStore(state => state.changeCurrentPage)
 
     useEffect(() => {
-        changeCurrentPage("/links")
+        changeCurrentPage("/bulbs")
     }, [])
 
     return (
         <div className="w-full h-screen flex flex-row items-start justify-start">
             <SideBar />
             <div className="w-full h-screen">
-                <Navbar currentPage="My Links" />
+                <Navbar currentPage="My Bulbs" />
             </div>
         </div>
     )
 }
 
-export default Links
+export default Bulbs

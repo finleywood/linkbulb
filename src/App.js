@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import PrivateRoute from './components/PrivateRoute';
 import Analytics from './pages/Analytics';
+import Bulbs from './pages/Bulbs';
 import Home from './pages/Home';
-import Links from './pages/Links';
 import Login from './pages/Login';
 import Logout from './pages/Logout';
 import Settings from './pages/Settings';
@@ -20,7 +20,7 @@ function App() {
     <Router>
       <Switch>
         <PrivateRoute exact path="/" component={Home} />
-        <PrivateRoute exact path="/links" component={Links} />
+        <PrivateRoute exact path="/bulbs" component={Bulbs} />
         <PrivateRoute exact path="/analytics" component={Analytics} />
         <PrivateRoute exact path="/settings" component={Settings} />
         <Route exact path="/login" component={Login} />

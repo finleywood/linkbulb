@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Button({ text, clicked, loading }) {
     return (
-        <button disabled={loading} onClick={clicked} className="w-5/6 h-10 rounded-sm bg-green-500 hover:shadow-md">
+        <button disabled={loading} onClick={clicked} className="w-5/6 h-10 font-default font-medium rounded-sm bg-green-500 hover:shadow-md">
             {loading ? <FontAwesomeIcon icon={faSpinner} spin={true} /> : text}
         </button>
     )
